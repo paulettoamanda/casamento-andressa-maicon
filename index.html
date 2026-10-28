@@ -1,89 +1,509 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f3eb">
-  <meta name="description" content="Celebre conosco o casamento de Andressa e Maicon, em 7 de novembro de 2026.">
-  <title>Andressa & Maicon | Nosso casamento</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#D9EEF5">
+  <title>Andressa & Maicon | Nosso Casamento</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
   <style>
-    :root{--cream:#f7f3eb;--paper:#fffdf8;--olive:#68745b;--olive-dark:#414b3a;--gold:#b69a65;--ink:#37382f;--muted:#77766b;--line:#ddd3bf}
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
-    a{color:inherit} .serif{font-family:Georgia,'Times New Roman',serif;font-weight:400} .topline{height:5px;background:linear-gradient(90deg,var(--olive),var(--gold),var(--olive))}
-    header{min-height:92vh;display:grid;place-items:center;text-align:center;padding:56px 22px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 15% 20%,#e7e8da 0,transparent 33%),radial-gradient(ellipse at 88% 82%,#e8dfce 0,transparent 34%),var(--cream)}
-    header:before,header:after{content:'✦';position:absolute;color:#a4ad93;font-size:clamp(100px,22vw,250px);opacity:.22;font-family:Georgia;line-height:1}header:before{left:-28px;top:8%}header:after{right:-20px;bottom:7%;transform:rotate(25deg)}
-    .hero{max-width:760px;position:relative;z-index:1;border:1px solid var(--line);padding:clamp(28px,6vw,66px) clamp(22px,7vw,78px);background:#fffdf8b8;box-shadow:0 14px 45px #5b53300b}
-    .eyebrow{font-size:.75rem;letter-spacing:.25em;text-transform:uppercase;color:var(--olive);margin:0 0 18px}.names{font-size:clamp(3.2rem,10vw,6.7rem);line-height:1.02;margin:0;color:var(--olive-dark)}.amp{color:var(--gold);font-style:italic}.date{font-size:1rem;letter-spacing:.18em;text-transform:uppercase;margin:28px 0 14px}.intro{color:var(--muted);max-width:430px;margin:0 auto 25px}.btn{display:inline-block;background:var(--olive-dark);color:#fffdf8;text-decoration:none;padding:13px 22px;border-radius:2px;letter-spacing:.04em;font-size:.9rem;transition:transform .2s,background .2s}.btn:hover{background:var(--olive);transform:translateY(-2px)}.btn.secondary{background:transparent;color:var(--olive-dark);border:1px solid var(--olive)}
-    nav{display:flex;justify-content:center;gap:clamp(14px,4vw,36px);flex-wrap:wrap;padding:17px 16px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper)}nav a{text-decoration:none;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--olive-dark)}
-    section{padding:82px 20px;scroll-margin-top:24px}.wrap{max-width:960px;margin:auto}.section-label{text-align:center;color:var(--gold);font-size:.74rem;text-transform:uppercase;letter-spacing:.24em;margin:0 0 10px}.section-title{text-align:center;font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.12;color:var(--olive-dark);margin:0 0 24px}.center{text-align:center}.lead{max-width:680px;margin:0 auto;color:var(--muted);text-align:center}.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:650px;margin:34px auto 0}.timebox{border:1px solid var(--line);background:var(--paper);padding:18px 8px;text-align:center}.timebox strong{display:block;font:clamp(1.8rem,5vw,3rem) Georgia,serif;color:var(--olive-dark);line-height:1.1}.timebox span{font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
-    .story{background:var(--paper)}.story-card{max-width:760px;margin:30px auto 0;border-left:2px solid var(--gold);padding:8px 0 8px 25px;color:var(--muted)}.story-card p{margin:0 0 14px}.detail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:32px}.detail{border:1px solid var(--line);padding:26px;background:var(--paper);text-align:center}.detail .symbol{font-size:1.7rem;color:var(--gold)}.detail h3{font:1.65rem Georgia,serif;color:var(--olive-dark);font-weight:400;margin:8px 0}.detail p{color:var(--muted);margin:0;font-size:.95rem}.note{font-size:.85rem;color:var(--muted);margin-top:18px;text-align:center}
-    .photos{background:#e9e9df}.photo-inner{max-width:780px;margin:auto;text-align:center}.photo-inner .section-title{margin-bottom:18px}.upload-note{max-width:580px;margin:0 auto 25px;color:#66695d}.closing{padding:76px 20px;text-align:center;background:var(--olive-dark);color:var(--cream)}.closing .names{font-size:clamp(2.8rem,8vw,5rem);color:var(--cream)}.closing p{color:#e2dfd2}.footer{padding:18px;text-align:center;font-size:.75rem;color:var(--muted);background:var(--cream)}
-    @media(max-width:600px){header{min-height:85vh}.hero{padding:35px 20px}.countdown{gap:7px}.timebox{padding:14px 3px}.timebox span{font-size:.58rem}.detail-grid{grid-template-columns:1fr}section{padding:62px 18px}nav{gap:12px}nav a{font-size:.68rem}}
+    :root {
+      --azul-claro: #D9EEF5;
+      --azul-ceu: #A8D4E4;
+      --azul-medio: #739FB5;
+      --branco: #FFFEFA;
+      --texto: #385568;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--branco);
+      color: var(--texto);
+      font-family: "DM Sans", sans-serif;
+    }
+
+    .hero {
+      min-height: 92vh;
+      display: grid;
+      place-items: center;
+      position: relative;
+      overflow: hidden;
+      padding: 70px 20px;
+      text-align: center;
+      color: white;
+      background:
+        linear-gradient(
+          180deg,
+          rgba(28, 65, 83, 0.18),
+          rgba(28, 65, 83, 0.48)
+        ),
+        url("fotos/andressa_maicon%20(9).jpg")
+        center 42% / cover no-repeat;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 100px;
+      background: linear-gradient(transparent, var(--branco));
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      animation: aparecer 1.2s ease both;
+    }
+
+    .monograma {
+      font: italic 400 clamp(3.5rem, 10vw, 6rem)/1
+        "Playfair Display", Georgia, serif;
+      margin-bottom: 28px;
+      color: #F5FCFF;
+      text-shadow: 0 2px 18px rgba(0, 0, 0, 0.18);
+    }
+
+    .eyebrow {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.24em;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font: 400 clamp(3rem, 9vw, 6.8rem)/1.12
+        "Playfair Display", Georgia, serif;
+      margin: 0;
+      text-shadow: 0 2px 22px rgba(0, 0, 0, 0.18);
+    }
+
+    h1 span {
+      font-style: italic;
+      color: #D9EEF5;
+    }
+
+    .date {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 11px 20px;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 50px;
+      letter-spacing: 0.16em;
+      font-size: 0.8rem;
+      backdrop-filter: blur(5px);
+    }
+
+    section {
+      padding: 72px 6%;
+    }
+
+    .inner {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .kicker {
+      color: var(--azul-medio);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      text-align: center;
+      font-size: 0.7rem;
+      font-weight: 600;
+    }
+
+    h2 {
+      color: var(--texto);
+      text-align: center;
+      font: 400 clamp(2.1rem, 5vw, 3.4rem)/1.2
+        "Playfair Display", Georgia, serif;
+      margin: 12px 0 18px;
+    }
+
+    .intro {
+      max-width: 620px;
+      text-align: center;
+      line-height: 1.8;
+      color: #718997;
+      margin: 0 auto 32px;
+    }
+
+    .carousel {
+      position: relative;
+      margin: 32px auto 0;
+    }
+
+    .frame {
+      overflow: hidden;
+      border-radius: 8px;
+      background: var(--azul-claro);
+      box-shadow: 0 15px 45px rgba(80, 125, 145, 0.12);
+    }
+
+    .track {
+      display: flex;
+      transition: transform 0.45s ease;
+      touch-action: pan-y;
+    }
+
+    .slide {
+      min-width: 100%;
+      height: clamp(300px, 65vw, 620px);
+    }
+
+    .slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(115, 159, 181, 0.3);
+      border-radius: 50%;
+      background: rgba(255, 254, 250, 0.95);
+      color: var(--azul-medio);
+      font-size: 1.7rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .arrow:hover {
+      background: var(--azul-claro);
+    }
+
+    .prev {
+      left: 14px;
+    }
+
+    .next {
+      right: 14px;
+    }
+
+    .dots {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-top: 22px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      padding: 0;
+      border: none;
+      border-radius: 50%;
+      background: #C7DDE5;
+      cursor: pointer;
+    }
+
+    .dot.active {
+      background: var(--azul-medio);
+      transform: scale(1.3);
+    }
+
+    .share {
+      background: var(--azul-claro);
+      text-align: center;
+      padding-top: 75px;
+      padding-bottom: 75px;
+    }
+
+    .share h2 {
+      color: var(--texto);
+    }
+
+    .share p {
+      max-width: 550px;
+      margin: 0 auto 28px;
+      line-height: 1.8;
+      color: #5E7C8D;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 27px;
+      border-radius: 50px;
+      background: var(--azul-medio);
+      color: white;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .button:hover {
+      background: #5F8DA5;
+      transform: translateY(-2px);
+    }
+
+    .quotes {
+      background: var(--branco);
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 55px;
+    }
+
+    .heart {
+      color: var(--azul-medio);
+      font-size: 1.5rem;
+    }
+
+    .quote {
+      max-width: 720px;
+      margin: 16px auto;
+      font: italic 400 clamp(1.3rem, 3.5vw, 1.9rem)/1.55
+        "Playfair Display", Georgia, serif;
+      color: var(--texto);
+    }
+
+    .signature {
+      margin-top: 25px;
+      font: italic 1.1rem "Playfair Display", Georgia, serif;
+      color: var(--azul-medio);
+    }
+
+    footer {
+      padding: 22px 15px;
+      text-align: center;
+      background: #EAF5F8;
+      color: #648394;
+      font-size: 0.8rem;
+    }
+
+    footer span {
+      color: var(--azul-medio);
+    }
+
+    @keyframes aparecer {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        min-height: 82vh;
+        background-position: 52% center;
+      }
+
+      section {
+        padding: 55px 5%;
+      }
+
+      .arrow {
+        width: 38px;
+        height: 38px;
+        font-size: 1.4rem;
+      }
+
+      .prev {
+        left: 8px;
+      }
+
+      .next {
+        right: 8px;
+      }
+
+      .frame {
+        border-radius: 5px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .track {
+        transition: none;
+      }
+
+      .hero-content {
+        animation: none;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <div class="topline"></div>
-  <header id="inicio">
-    <div class="hero">
-      <p class="eyebrow">Com carinho, convidamos você</p>
-      <h1 class="names serif">Andressa <span class="amp">&</span><br>Maicon</h1>
-      <p class="date">07 · 11 · 2026</p>
-      <p class="intro">Um dia especial, uma nova etapa e a alegria de compartilhar esse momento com as pessoas que amamos.</p>
-      <a class="btn" href="#grande-dia">Conheça os detalhes</a>
-    </div>
-  </header>
-  <nav aria-label="Navegação principal">
-    <a href="#inicio">Início</a><a href="#historia">Nossa história</a><a href="#grande-dia">O grande dia</a><a href="#fotos">Compartilhe fotos</a>
-  </nav>
   <main>
-    <section id="contagem">
-      <div class="wrap">
-        <p class="section-label">Está chegando</p><h2 class="section-title serif">A contagem regressiva</h2>
-        <p class="lead">Estamos contando os dias para celebrar esse capítulo tão especial ao lado de quem faz parte da nossa história.</p>
-        <div class="countdown" aria-label="Contagem regressiva">
-          <div class="timebox"><strong id="days">—</strong><span>Dias</span></div><div class="timebox"><strong id="hours">—</strong><span>Horas</span></div><div class="timebox"><strong id="minutes">—</strong><span>Minutos</span></div><div class="timebox"><strong id="seconds">—</strong><span>Segundos</span></div>
+    <header class="hero">
+      <div class="hero-content">
+        <div class="monograma">A <span>&</span> M</div>
+        <div class="eyebrow">Uma história de amor</div>
+        <h1>Andressa <span>&</span> Maicon</h1>
+        <div class="date">07 · NOVEMBRO · 2026</div>
+      </div>
+    </header>
+
+    <section id="fotos">
+      <div class="inner">
+        <div class="kicker">Nossa história em imagens</div>
+        <h2>Momentos que ficam</h2>
+        <p class="intro">
+          Cada foto guarda um pedacinho da nossa história
+          e das lembranças que nos trouxeram até aqui.
+        </p>
+
+        <div class="carousel" aria-label="Galeria de fotos do casal">
+          <button class="arrow prev" type="button"
+            aria-label="Foto anterior">‹</button>
+
+          <div class="frame">
+            <div class="track" id="track">
+              <div class="slide">
+                <img src="fotos/andressa_maicon%20(1).jpg"
+                  alt="Andressa e Maicon, foto 1">
+              </div>
+              <div class="slide">
+                <img src="fotos/andressa_maicon%20(2).jpg"
+                  alt="Andressa e Maicon, foto 2" loading="lazy">
+              </div>
+              <div class="slide">
+                <img src="fotos/andressa_maicon%20(3).jpg"
+                  alt="Andressa e Maicon, foto 3" loading="lazy">
+              </div>
+              <div class="slide">
+                <img src="fotos/andressa_maicon%20(4).jpg"
+                  alt="Andressa e Maicon, foto 4" loading="lazy">
+              </div>
+              <div class="slide">
+                <img src="fotos/andressa_maicon%20(5).jpg"
+                  alt="Andressa e Maicon, foto 5" loading="lazy">
+              </div>
+              <div class="slide">
+                <img src="fotos/andressa_maicon%20(6).jpg"
+                  alt="Andressa e Maicon, foto 6" loading="lazy">
+              </div>
+              <div class="slide">
+                <img src="fotos/andressa_maicon%20(7).jpg"
+                  alt="Andressa e Maicon, foto 7" loading="lazy">
+              </div>
+              <div class="slide">
+                <img src="fotos/andressa_maicon%20(8).jpg"
+                  alt="Andressa e Maicon, foto 8" loading="lazy">
+              </div>
+              <div class="slide">
+                <img src="fotos/andressa_maicon%20(9).jpg"
+                  alt="Andressa e Maicon, foto 9" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <button class="arrow next" type="button"
+            aria-label="Próxima foto">›</button>
+
+          <div class="dots" id="dots"
+            aria-label="Selecionar foto"></div>
         </div>
       </div>
     </section>
-    <section class="story" id="historia">
-      <div class="wrap">
-        <p class="section-label">Do nosso jeito</p><h2 class="section-title serif">Nossa história</h2>
-        <p class="lead">Uma história feita de encontros, risadas, companheirismo e sonhos que, aos poucos, se tornaram planos para a vida toda.</p>
-        <div class="story-card"><p>Entre momentos simples, viagens, churrascos em família e tantas lembranças especiais, construímos uma história que nos trouxe até aqui.</p><p>Agora, chegou a hora de celebrar o amor e começar uma nova etapa. E não imaginamos esse dia sem compartilhar a alegria com vocês.</p></div>
+
+    <section class="share" id="enviar-fotos">
+      <div class="inner">
+        <div class="kicker">Faça parte das nossas lembranças</div>
+        <h2>E registre o que seus olhos veem</h2>
+        <p>
+          Poste suas fotos e vídeos do nosso casamento.
+        </p>
+
+        <a class="button"
+          href="https://guestdrop.app/u/cmvpbuqzl000bl908d1x4srl9"
+          target="_blank" rel="noopener noreferrer">
+          Enviar fotos e vídeos ↗
+        </a>
       </div>
     </section>
-    <section id="grande-dia">
-      <div class="wrap">
-        <p class="section-label">Reserve a data</p><h2 class="section-title serif">O grande dia</h2>
-        <p class="lead">Anote a data e acompanhe por aqui as informações para celebrar conosco.</p>
-        <div class="detail-grid">
-          <article class="detail"><div class="symbol">♡</div><h3>Quando</h3><p>Sábado, 7 de novembro de 2026</p></article>
-          <article class="detail"><div class="symbol">⌖</div><h3>Onde</h3><p>Em breve, compartilharemos os detalhes do local.</p></article>
-        </div>
-        <p class="note">Consulte esta página novamente para conferir atualizações e informações do evento.</p>
+
+    <section class="quotes">
+      <div class="inner">
+        <div class="heart">♡</div>
+        <p class="quote">
+          “Cada olhar guarda um instante que merece ser lembrado.”
+        </p>
+        <p class="quote">
+          “Dois corações, uma só história, mil registros de amor.”
+        </p>
+        <div class="signature">Andressa & Maicon</div>
       </div>
     </section>
-    <section class="photos" id="fotos">
-      <div class="photo-inner">
-        <p class="section-label">Um pedacinho desse dia</p><h2 class="section-title serif">Compartilhe suas fotos</h2>
-        <p class="upload-note">Tirou fotos ou vídeos durante a celebração? Envie seus registros para que possamos guardar e reviver esses momentos tão especiais.</p>
-        <a class="btn" href="https://guestdrop.app/u/cmvpbuqzl000bl908d1x4srl9" target="_blank" rel="noopener noreferrer">Enviar fotos e vídeos</a>
-        <p class="note">O envio será aberto em uma página segura de compartilhamento.</p>
-      </div>
-    </section>
-    <section class="closing"><p class="eyebrow" style="color:#d6c49a">Esperamos você</p><h2 class="names serif">Andressa <span class="amp">&</span> Maicon</h2><p>07 de novembro de 2026 · Com amor, para sempre.</p></section>
   </main>
-  <footer class="footer">Feito com carinho para celebrar Andressa & Maicon ♡</footer>
+
+  <footer>
+    Feito com <span>♡</span> para celebrar Andressa & Maicon · 07.11.2026
+  </footer>
+
   <script>
-    const target = new Date('2026-11-07T16:00:00-03:00').getTime();
-    const ids = ['days','hours','minutes','seconds'];
-    function tick(){
-      let diff = target - Date.now();
-      if(diff <= 0){ document.querySelector('.countdown').innerHTML='<p class="lead" style="grid-column:1/-1">Chegou o grande dia! Vamos celebrar! ♡</p>'; return; }
-      const values=[Math.floor(diff/86400000),Math.floor(diff%86400000/3600000),Math.floor(diff%3600000/60000),Math.floor(diff%60000/1000)];
-      ids.forEach((id,i)=>document.getElementById(id).textContent=String(values[i]).padStart(2,'0'));
+    const track = document.getElementById("track");
+    const slides = Array.from(track.children);
+    const dots = document.getElementById("dots");
+    let current = 0;
+    let startX = 0;
+
+    slides.forEach((_, i) => {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.className = "dot" + (i === 0 ? " active" : "");
+      dot.setAttribute("aria-label", "Ir para a foto " + (i + 1));
+      dot.addEventListener("click", () => show(i));
+      dots.appendChild(dot);
+    });
+
+    function show(index) {
+      current = (index + slides.length) % slides.length;
+      track.style.transform = `translateX(-${current * 100}%)`;
+
+      Array.from(dots.children).forEach((dot, i) => {
+        dot.classList.toggle("active", i === current);
+        dot.setAttribute(
+          "aria-current",
+          i === current ? "true" : "false"
+        );
+      });
     }
-    tick(); setInterval(tick,1000);
+
+    document.querySelector(".prev")
+      .addEventListener("click", () => show(current - 1));
+
+    document.querySelector(".next")
+      .addEventListener("click", () => show(current + 1));
+
+    track.addEventListener("touchstart", event => {
+      startX = event.changedTouches[0].screenX;
+    }, { passive: true });
+
+    track.addEventListener("touchend", event => {
+      const difference = startX - event.changedTouches[0].screenX;
+
+      if (Math.abs(difference) > 45) {
+        show(current + (difference > 0 ? 1 : -1));
+      }
+    }, { passive: true });
   </script>
 </body>
 </html>
