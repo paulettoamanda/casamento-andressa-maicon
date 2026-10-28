@@ -4,23 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#D9EEF5">
-  <meta name="description" content="Andressa e Maicon — 7 de novembro de 2026. Compartilhe conosco as lembranças desse dia especial.">
 
   <title>Andressa & Maicon | Nosso Casamento</title>
+  <meta name="description" content="Compartilhe suas fotos e vídeos do casamento de Andressa e Maicon.">
+
+  <meta name="theme-color" content="#eaf5f9">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --azul-claro: #D9EEF5;
-      --azul-ceu: #A8D4E4;
-      --azul-medio: #739FB5;
-      --azul-escuro: #385F76;
-      --branco: #FFFEFA;
-      --texto: #385568;
+      --azul-claro: #eaf5f9;
+      --azul-medio: #a8d4e4;
+      --azul: #739fb5;
+      --azul-escuro: #284e67;
+      --branco: #fffefa;
+      --texto: #415966;
     }
 
     * {
@@ -35,387 +36,211 @@
       margin: 0;
       background: var(--branco);
       color: var(--texto);
-      font-family: "DM Sans", sans-serif;
+      font-family: 'DM Sans', sans-serif;
+      text-align: center;
     }
-
-    button,
-    a {
-      -webkit-tap-highlight-color: transparent;
-    }
-
-    /* CAPA */
 
     .hero {
-      min-height: 92svh;
-      min-height: 92vh;
-      display: grid;
-      place-items: center;
       position: relative;
+      min-height: 590px;
+      min-height: min(760px, 90svh);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       overflow: hidden;
-      padding: 65px 20px 100px;
-      text-align: center;
-      color: white;
+      padding: 60px 20px;
       background:
         linear-gradient(
-          180deg,
-          rgba(30, 65, 82, 0.14),
-          rgba(30, 65, 82, 0.48)
+          to bottom,
+          rgba(21, 47, 63, 0.20),
+          rgba(21, 47, 63, 0.48)
         ),
-        url("fotos/andressa_maicon%20(9).jpg")
-        center 42% / cover no-repeat;
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: auto 0 0;
-      height: 105px;
-      background: linear-gradient(transparent, var(--branco));
-      pointer-events: none;
+        url("fotos/andressa_maicon%20(9).jpg") center 45% / cover no-repeat;
+      color: white;
     }
 
     .hero-content {
       position: relative;
       z-index: 1;
-      animation: aparecer 1s ease both;
-    }
-
-    .monograma {
-      font: italic 400 clamp(3.8rem, 10vw, 6rem)/1
-        "Playfair Display", Georgia, serif;
-      margin-bottom: 26px;
-      color: #F5FCFF;
-      text-shadow: 0 2px 18px rgba(0, 0, 0, 0.2);
-    }
-
-    .eyebrow {
-      font-size: 0.72rem;
-      text-transform: uppercase;
-      letter-spacing: 0.24em;
-      margin-bottom: 18px;
-    }
-
-    h1 {
-      font: 400 clamp(2.8rem, 8vw, 6.4rem)/1.15
-        "Playfair Display", Georgia, serif;
-      margin: 0;
-      text-shadow: 0 2px 22px rgba(0, 0, 0, 0.2);
-    }
-
-    h1 span {
-      font-style: italic;
-      color: var(--azul-claro);
-    }
-
-    .date {
-      display: inline-block;
-      margin-top: 28px;
-      padding: 12px 21px;
-      border: 1px solid rgba(255, 255, 255, 0.85);
-      border-radius: 50px;
-      letter-spacing: 0.15em;
-      font-size: 0.78rem;
-      backdrop-filter: blur(6px);
-      background: rgba(255, 255, 255, 0.08);
-    }
-
-    /* GALERIA */
-
-    section {
-      padding: 70px 6%;
-    }
-
-    .inner {
-      max-width: 1050px;
-      margin: 0 auto;
-    }
-
-    .kicker {
-      color: var(--azul-medio);
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      text-align: center;
-      font-size: 0.7rem;
-      font-weight: 600;
-    }
-
-    h2 {
-      color: var(--texto);
-      text-align: center;
-      font: 400 clamp(2.1rem, 5vw, 3.4rem)/1.2
-        "Playfair Display", Georgia, serif;
-      margin: 12px 0 18px;
-    }
-
-    .intro {
-      max-width: 620px;
-      text-align: center;
-      line-height: 1.8;
-      color: #718997;
-      margin: 0 auto 34px;
-      font-size: 0.96rem;
-    }
-
-    .carousel {
-      position: relative;
-      margin: 32px auto 0;
-    }
-
-    .frame {
-      overflow: hidden;
-      border-radius: 8px;
-      background: #EDF6F9;
-      box-shadow: 0 15px 45px rgba(80, 125, 145, 0.12);
-    }
-
-    .track {
-      display: flex;
-      align-items: center;
-      transition: transform 0.45s ease;
-      touch-action: pan-y;
-    }
-
-    .slide {
-      min-width: 100%;
-      height: clamp(300px, 62vw, 650px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #EDF6F9;
-    }
-
-    .slide img {
-      display: block;
       width: 100%;
-      height: 100%;
-      object-fit: contain;
-      object-position: center;
-    }
-
-    .arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 2;
-      display: grid;
-      place-items: center;
-      width: 48px;
-      height: 48px;
-      border: 1px solid rgba(115, 159, 181, 0.35);
-      border-radius: 50%;
-      background: rgba(255, 254, 250, 0.96);
-      color: var(--azul-escuro);
-      font-size: 1.8rem;
-      line-height: 1;
-      cursor: pointer;
-      box-shadow: 0 3px 14px rgba(40, 80, 100, 0.12);
-      transition: background 0.2s, transform 0.2s;
-    }
-
-    .arrow:hover {
-      background: var(--azul-claro);
-      transform: translateY(-50%) scale(1.06);
-    }
-
-    .prev {
-      left: 14px;
-    }
-
-    .next {
-      right: 14px;
-    }
-
-    .dots {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-      padding-top: 22px;
-    }
-
-    .dot {
-      width: 9px;
-      height: 9px;
-      padding: 0;
-      border: none;
-      border-radius: 50%;
-      background: #C7DDE5;
-      cursor: pointer;
-      transition: background 0.2s, transform 0.2s;
-    }
-
-    .dot.active {
-      background: var(--azul-escuro);
-      transform: scale(1.3);
-    }
-
-    /* ENVIO DE FOTOS */
-
-    .share {
-      position: relative;
-      overflow: hidden;
-      background:
-        radial-gradient(
-          ellipse at top,
-          rgba(255, 255, 255, 0.85),
-          transparent 70%
-        ),
-        var(--azul-claro);
-      text-align: center;
-      padding: 80px 6% 84px;
-    }
-
-    .share .inner {
       max-width: 750px;
     }
 
-    .share h2 {
-      margin-top: 16px;
-      margin-bottom: 20px;
+    .monograma {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(55px, 11vw, 100px);
+      font-weight: 400;
+      line-height: 1.15;
+      margin-bottom: 18px;
+      text-shadow: 0 2px 18px rgba(0, 0, 0, 0.18);
     }
 
-    .share p {
-      max-width: 550px;
-      margin: 0 auto 30px;
-      line-height: 1.8;
-      color: #5E7C8D;
-      font-size: 1rem;
+    .hero h1 {
+      margin: 0;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(35px, 7vw, 62px);
+      font-weight: 400;
+      line-height: 1.2;
+      text-shadow: 0 2px 16px rgba(0, 0, 0, 0.25);
     }
 
-    .upload-button {
+    .hero-date {
+      margin-top: 22px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    .hero-line {
+      width: 65px;
+      height: 1px;
+      margin: 24px auto 0;
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    .upload-section {
+      padding: 75px 22px 65px;
+      background:
+        radial-gradient(
+          ellipse at top,
+          #eaf5f9 0%,
+          #fffefa 70%
+        );
+    }
+
+    .camera-icon {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 12px;
-      min-width: min(340px, 100%);
-      padding: 21px 32px;
-      border: 2px solid var(--azul-escuro);
-      border-radius: 60px;
-      background: var(--azul-escuro);
-      color: #FFFFFF;
-      text-decoration: none;
-      font-family: "DM Sans", sans-serif;
-      font-size: 1rem;
+      width: 66px;
+      height: 66px;
+      margin-bottom: 22px;
+      border-radius: 50%;
+      background: #d9eef5;
+      color: var(--azul-escuro);
+    }
+
+    .camera-icon svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    .upload-section h2 {
+      max-width: 650px;
+      margin: 0 auto 16px;
+      color: var(--azul-escuro);
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(30px, 5vw, 43px);
+      font-weight: 400;
+      line-height: 1.25;
+    }
+
+    .upload-description {
+      max-width: 480px;
+      margin: 0 auto;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #5c7481;
+    }
+
+    .upload-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 13px;
+      width: min(100%, 390px);
+      min-height: 72px;
+      margin: 32px auto 20px;
+      padding: 18px 25px;
+      border: 2px solid #284e67;
+      border-radius: 50px;
+      background: #284e67;
+      color: #ffffff;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
       font-weight: 700;
-      letter-spacing: 0.025em;
-      box-shadow: 0 10px 28px rgba(54, 95, 118, 0.3);
+      letter-spacing: 0.3px;
+      text-decoration: none;
+      box-shadow: 0 8px 22px rgba(40, 78, 103, 0.25);
       transition:
-        transform 0.2s,
-        background 0.2s,
-        box-shadow 0.2s;
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
     }
 
     .upload-button:hover {
-      background: #294B60;
-      border-color: #294B60;
       transform: translateY(-3px);
-      box-shadow: 0 14px 32px rgba(54, 95, 118, 0.35);
+      background: #1d3d53;
+      box-shadow: 0 12px 28px rgba(40, 78, 103, 0.32);
     }
 
-    .upload-icon {
-      width: 23px;
-      height: 23px;
-      flex: 0 0 auto;
+    .upload-button:focus-visible {
+      outline: 3px solid #a8d4e4;
+      outline-offset: 5px;
     }
 
-    .button-note {
-      margin-top: 17px;
-      color: #648394;
-      font-size: 0.78rem;
-      line-height: 1.6;
+    .upload-button svg {
+      flex-shrink: 0;
+      width: 25px;
+      height: 25px;
     }
 
-    /* FRASES */
-
-    .quotes {
-      background: var(--branco);
-      text-align: center;
-      padding: 48px 6% 58px;
-    }
-
-    .heart {
-      color: var(--azul-medio);
-      font-size: 1.8rem;
+    .button-caption {
+      margin: 0;
+      color: #718995;
+      font-size: 13px;
     }
 
     .quote {
-      max-width: 720px;
-      margin: 16px auto;
-      font: italic 400 clamp(1.25rem, 3.5vw, 1.8rem)/1.55
-        "Playfair Display", Georgia, serif;
-      color: var(--texto);
-    }
-
-    .signature {
-      margin-top: 25px;
-      font: italic 1.1rem "Playfair Display", Georgia, serif;
-      color: var(--azul-medio);
+      max-width: 570px;
+      margin: 45px auto 0;
+      padding: 25px 15px 0;
+      border-top: 1px solid #cfe4ec;
+      color: #66899b;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(19px, 3vw, 23px);
+      font-style: italic;
+      line-height: 1.7;
     }
 
     footer {
-      padding: 22px 15px;
-      text-align: center;
-      background: #EAF5F8;
-      color: #648394;
-      font-size: 0.8rem;
+      padding: 25px 20px 30px;
+      background: #eaf5f9;
+      color: #66899b;
+      font-size: 12px;
+      letter-spacing: 1px;
     }
 
-    footer span {
-      color: var(--azul-medio);
-    }
-
-    @keyframes aparecer {
-      from {
-        opacity: 0;
-        transform: translateY(15px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    footer p {
+      margin: 5px 0;
     }
 
     @media (max-width: 600px) {
       .hero {
-        min-height: 82vh;
-        background-position: 52% center;
+        min-height: 540px;
+        min-height: 82svh;
+        padding: 45px 18px;
+        background-position: center center;
       }
 
-      section {
-        padding: 52px 5%;
+      .hero-date {
+        font-size: 11px;
+        letter-spacing: 3px;
       }
 
-      .slide {
-        height: min(115vw, 520px);
-      }
-
-      .arrow {
-        width: 39px;
-        height: 39px;
-        font-size: 1.45rem;
-      }
-
-      .prev {
-        left: 8px;
-      }
-
-      .next {
-        right: 8px;
-      }
-
-      .frame {
-        border-radius: 5px;
-      }
-
-      .share {
-        padding: 65px 6%;
+      .upload-section {
+        padding: 58px 22px 48px;
       }
 
       .upload-button {
-        width: 100%;
-        max-width: 340px;
-        padding: 20px 20px;
+        min-height: 70px;
+        font-size: 15px;
+      }
+
+      .quote {
+        margin-top: 35px;
       }
     }
 
@@ -424,220 +249,104 @@
         scroll-behavior: auto;
       }
 
-      .track,
-      .upload-button,
-      .arrow {
+      .upload-button {
         transition: none;
-      }
-
-      .hero-content {
-        animation: none;
       }
     }
   </style>
 </head>
 
 <body>
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="monograma">A <span>&</span> M</div>
+
+      <h1>Andressa & Maicon</h1>
+
+      <p class="hero-date">07 de novembro de 2026</p>
+
+      <div class="hero-line"></div>
+    </div>
+  </header>
+
   <main>
-    <header class="hero">
-      <div class="hero-content">
-        <div class="monograma">A & M</div>
-        <div class="eyebrow">Uma história de amor</div>
-        <h1>Andressa <span>&</span> Maicon</h1>
-        <div class="date">07 · NOVEMBRO · 2026</div>
+    <section class="upload-section">
+
+      <div class="camera-icon" aria-hidden="true">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.7"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M14 4H10L8 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-4l-2-3Z"/>
+          <circle cx="12" cy="13" r="4"/>
+        </svg>
       </div>
-    </header>
 
-    <section id="fotos">
-      <div class="inner">
-        <div class="kicker">Nossa história em imagens</div>
-        <h2>Momentos que ficam</h2>
-        <p class="intro">
-          Cada foto guarda um pedacinho da nossa história
-          e das lembranças que nos trouxeram até aqui.
-        </p>
+      <h2>E registre o que seus olhos veem</h2>
 
-        <div class="carousel" aria-label="Galeria de fotos do casal">
-          <button class="arrow prev" type="button"
-            aria-label="Foto anterior">‹</button>
+      <p class="upload-description">
+        Poste suas fotos e vídeos do nosso casamento.
+        Queremos guardar cada sorriso, abraço e momento
+        especial vivido ao lado de vocês!
+      </p>
 
-          <div class="frame">
-            <div class="track" id="track">
-              <div class="slide">
-                <img src="fotos/andressa_maicon%20(1).jpg"
-                  alt="Andressa e Maicon, foto 1">
-              </div>
+      <a
+        class="upload-button"
+        href="https://guestdrop.app/u/cmvpbuqzl000bl908d1x4srl9"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M12 16V4"/>
+          <path d="m7 9 5-5 5 5"/>
+          <path d="M20 16.5v2A1.5 1.5 0 0 1 18.5 20h-13A1.5 1.5 0 0 1 4 18.5v-2"/>
+        </svg>
 
-              <div class="slide">
-                <img src="fotos/andressa_maicon%20(2).jpg"
-                  alt="Andressa e Maicon, foto 2" loading="lazy">
-              </div>
+        <span>ENVIAR FOTOS E VÍDEOS</span>
 
-              <div class="slide">
-                <img src="fotos/andressa_maicon%20(3).jpg"
-                  alt="Andressa e Maicon, foto 3" loading="lazy">
-              </div>
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M7 17 17 7"/>
+          <path d="M7 7h10v10"/>
+        </svg>
+      </a>
 
-              <div class="slide">
-                <img src="fotos/andressa_maicon%20(4).jpg"
-                  alt="Andressa e Maicon, foto 4" loading="lazy">
-              </div>
+      <p class="button-caption">
+        É só clicar e compartilhar seus registros com a gente.
+      </p>
 
-              <div class="slide">
-                <img src="fotos/andressa_maicon%20(5).jpg"
-                  alt="Andressa e Maicon, foto 5" loading="lazy">
-              </div>
+      <blockquote class="quote">
+        “Cada olhar guarda um instante que merece ser lembrado.”
+      </blockquote>
 
-              <div class="slide">
-                <img src="fotos/andressa_maicon%20(6).jpg"
-                  alt="Andressa e Maicon, foto 6" loading="lazy">
-              </div>
-
-              <div class="slide">
-                <img src="fotos/andressa_maicon%20(7).jpg"
-                  alt="Andressa e Maicon, foto 7" loading="lazy">
-              </div>
-
-              <div class="slide">
-                <img src="fotos/andressa_maicon%20(8).jpg"
-                  alt="Andressa e Maicon, foto 8" loading="lazy">
-              </div>
-
-              <div class="slide">
-                <img src="fotos/andressa_maicon%20(9).jpg"
-                  alt="Andressa e Maicon, foto 9" loading="lazy">
-              </div>
-            </div>
-          </div>
-
-          <button class="arrow next" type="button"
-            aria-label="Próxima foto">›</button>
-
-          <div class="dots" id="dots"
-            aria-label="Selecionar foto"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="share" id="enviar-fotos">
-      <div class="inner">
-        <div class="kicker">Suas lembranças também fazem parte da nossa história</div>
-
-        <h2>E registre o que seus olhos veem</h2>
-
-        <p>
-          Poste suas fotos e vídeos do nosso casamento.
-          Queremos guardar também os momentos que vocês viverem conosco.
-        </p>
-
-        <a class="upload-button"
-          href="https://guestdrop.app/u/cmvpbuqzl000bl908d1x4srl9"
-          target="_blank" rel="noopener noreferrer">
-
-          <svg class="upload-icon" viewBox="0 0 24 24"
-            fill="none" stroke="currentColor" stroke-width="1.8"
-            stroke-linecap="round" stroke-linejoin="round"
-            aria-hidden="true">
-            <path d="M12 16V4"></path>
-            <path d="m7 9 5-5 5 5"></path>
-            <path d="M20 16.5v2A1.5 1.5 0 0 1 18.5 20h-13A1.5 1.5 0 0 1 4 18.5v-2"></path>
-          </svg>
-
-          Enviar fotos e vídeos
-        </a>
-
-        <div class="button-note">
-          Clique no botão para compartilhar seus registros com os noivos.
-        </div>
-      </div>
-    </section>
-
-    <section class="quotes">
-      <div class="inner">
-        <div class="heart">♡</div>
-
-        <p class="quote">
-          “Cada olhar guarda um instante que merece ser lembrado.”
-        </p>
-
-        <p class="quote">
-          “Dois corações, uma só história, mil registros de amor.”
-        </p>
-
-        <div class="signature">Andressa & Maicon</div>
-      </div>
     </section>
   </main>
 
   <footer>
-    Feito com <span>♡</span> para celebrar Andressa & Maicon · 07.11.2026
+    <p>ANDRESSA & MAICON</p>
+    <p>Dois corações, uma só história, mil registros de amor.</p>
+    <p>07 · 11 · 2026</p>
   </footer>
 
-  <script>
-    const track = document.getElementById("track");
-    const slides = Array.from(track.children);
-    const dots = document.getElementById("dots");
-
-    let current = 0;
-    let startX = 0;
-    let startY = 0;
-
-    slides.forEach((slide, index) => {
-      const image = slide.querySelector("img");
-
-      image.addEventListener("error", () => {
-        image.alt = "Não foi possível carregar esta foto. Verifique o arquivo na pasta fotos.";
-      });
-
-      const dot = document.createElement("button");
-      dot.type = "button";
-      dot.className = "dot" + (index === 0 ? " active" : "");
-      dot.setAttribute("aria-label", "Ir para a foto " + (index + 1));
-
-      dot.addEventListener("click", () => show(index));
-      dots.appendChild(dot);
-    });
-
-    function show(index) {
-      current = (index + slides.length) % slides.length;
-
-      track.style.transform = `translateX(-${current * 100}%)`;
-
-      Array.from(dots.children).forEach((dot, i) => {
-        dot.classList.toggle("active", i === current);
-        dot.setAttribute(
-          "aria-current",
-          i === current ? "true" : "false"
-        );
-      });
-    }
-
-    document.querySelector(".prev").addEventListener("click", () => {
-      show(current - 1);
-    });
-
-    document.querySelector(".next").addEventListener("click", () => {
-      show(current + 1);
-    });
-
-    track.addEventListener("touchstart", event => {
-      startX = event.changedTouches[0].screenX;
-      startY = event.changedTouches[0].screenY;
-    }, { passive: true });
-
-    track.addEventListener("touchend", event => {
-      const differenceX = startX - event.changedTouches[0].screenX;
-      const differenceY = startY - event.changedTouches[0].screenY;
-
-      if (
-        Math.abs(differenceX) > 45 &&
-        Math.abs(differenceX) > Math.abs(differenceY)
-      ) {
-        show(current + (differenceX > 0 ? 1 : -1));
-      }
-    }, { passive: true });
-
-    show(0);
-  </script>
 </body>
 </html>
