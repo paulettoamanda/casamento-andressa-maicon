@@ -4,11 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#eaf5f9">
 
   <title>Andressa & Maicon | Nosso Casamento</title>
   <meta name="description" content="Compartilhe suas fotos e vídeos do casamento de Andressa e Maicon.">
-
-  <meta name="theme-color" content="#eaf5f9">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,24 +39,30 @@
       text-align: center;
     }
 
+    /* FOTO PRINCIPAL */
+
     .hero {
       position: relative;
-      min-height: 590px;
+      min-height: 580px;
       min-height: min(760px, 90svh);
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
       overflow: hidden;
-      padding: 60px 20px;
-      background:
+      padding: 50px 20px;
+      color: white;
+
+      background-image:
         linear-gradient(
           to bottom,
-          rgba(21, 47, 63, 0.20),
-          rgba(21, 47, 63, 0.48)
+          rgba(20, 35, 45, 0.12),
+          rgba(20, 35, 45, 0.42)
         ),
-        url("fotos/andressa_maicon%20(9).jpg") center 45% / cover no-repeat;
-      color: white;
+        url("fotos/casamento.jpg");
+
+      background-size: cover;
+      background-position: center 45%;
+      background-repeat: no-repeat;
     }
 
     .hero-content {
@@ -68,12 +73,12 @@
     }
 
     .monograma {
+      margin-bottom: 16px;
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(55px, 11vw, 100px);
+      font-size: clamp(55px, 11vw, 95px);
       font-weight: 400;
       line-height: 1.15;
-      margin-bottom: 18px;
-      text-shadow: 0 2px 18px rgba(0, 0, 0, 0.18);
+      text-shadow: 0 2px 18px rgba(0, 0, 0, 0.2);
     }
 
     .hero h1 {
@@ -97,16 +102,18 @@
       width: 65px;
       height: 1px;
       margin: 24px auto 0;
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.85);
     }
 
+    /* SEÇÃO DE ENVIO */
+
     .upload-section {
-      padding: 75px 22px 65px;
+      padding: 65px 22px 50px;
       background:
         radial-gradient(
           ellipse at top,
           #eaf5f9 0%,
-          #fffefa 70%
+          #fffefa 72%
         );
     }
 
@@ -128,8 +135,8 @@
     }
 
     .upload-section h2 {
-      max-width: 650px;
-      margin: 0 auto 16px;
+      max-width: 670px;
+      margin: 0 auto 17px;
       color: var(--azul-escuro);
       font-family: 'Playfair Display', Georgia, serif;
       font-size: clamp(30px, 5vw, 43px);
@@ -138,75 +145,86 @@
     }
 
     .upload-description {
-      max-width: 480px;
+      max-width: 510px;
       margin: 0 auto;
-      font-size: 16px;
-      line-height: 1.8;
       color: #5c7481;
+      font-size: 16px;
+      line-height: 1.85;
     }
+
+    /* BOTÃO EM DESTAQUE */
 
     .upload-button {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 13px;
-      width: min(100%, 390px);
-      min-height: 72px;
-      margin: 32px auto 20px;
-      padding: 18px 25px;
-      border: 2px solid #284e67;
+      gap: 12px;
+      width: min(100%, 410px);
+      min-height: 76px;
+      margin: 32px auto 18px;
+      padding: 19px 24px;
+
+      border: 2px solid var(--azul-escuro);
       border-radius: 50px;
-      background: #284e67;
+      background: var(--azul-escuro);
       color: #ffffff;
+
       font-family: 'DM Sans', sans-serif;
       font-size: 16px;
       font-weight: 700;
-      letter-spacing: 0.3px;
+      letter-spacing: 0.4px;
       text-decoration: none;
-      box-shadow: 0 8px 22px rgba(40, 78, 103, 0.25);
+
+      box-shadow: 0 9px 25px rgba(40, 78, 103, 0.28);
       transition:
         transform 0.2s ease,
-        box-shadow 0.2s ease,
-        background 0.2s ease;
+        background 0.2s ease,
+        box-shadow 0.2s ease;
     }
 
     .upload-button:hover {
       transform: translateY(-3px);
       background: #1d3d53;
-      box-shadow: 0 12px 28px rgba(40, 78, 103, 0.32);
+      box-shadow: 0 13px 30px rgba(40, 78, 103, 0.34);
     }
 
     .upload-button:focus-visible {
-      outline: 3px solid #a8d4e4;
+      outline: 3px solid var(--azul-medio);
       outline-offset: 5px;
     }
 
     .upload-button svg {
+      width: 24px;
+      height: 24px;
       flex-shrink: 0;
-      width: 25px;
-      height: 25px;
     }
 
     .button-caption {
       margin: 0;
       color: #718995;
       font-size: 13px;
+      line-height: 1.7;
     }
+
+    /* FRASE ANTES DO RODAPÉ */
 
     .quote {
       max-width: 570px;
-      margin: 45px auto 0;
-      padding: 25px 15px 0;
+      margin: 43px auto 0;
+      padding: 27px 12px 0;
       border-top: 1px solid #cfe4ec;
+
       color: #66899b;
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(19px, 3vw, 23px);
+      font-size: clamp(20px, 3vw, 24px);
       font-style: italic;
       line-height: 1.7;
     }
 
+    /* PARTE INFERIOR */
+
     footer {
-      padding: 25px 20px 30px;
+      padding: 26px 20px 30px;
       background: #eaf5f9;
       color: #66899b;
       font-size: 12px;
@@ -214,14 +232,14 @@
     }
 
     footer p {
-      margin: 5px 0;
+      margin: 6px 0;
     }
 
     @media (max-width: 600px) {
       .hero {
         min-height: 540px;
         min-height: 82svh;
-        padding: 45px 18px;
+        padding: 40px 18px;
         background-position: center center;
       }
 
@@ -231,12 +249,18 @@
       }
 
       .upload-section {
-        padding: 58px 22px 48px;
+        padding: 52px 22px 40px;
+      }
+
+      .upload-description {
+        font-size: 15px;
       }
 
       .upload-button {
-        min-height: 70px;
-        font-size: 15px;
+        min-height: 72px;
+        padding: 17px 15px;
+        gap: 9px;
+        font-size: 14px;
       }
 
       .quote {
@@ -260,13 +284,15 @@
 
   <header class="hero">
     <div class="hero-content">
-      <div class="monograma">A <span>&</span> M</div>
+
+      <div class="monograma">A & M</div>
 
       <h1>Andressa & Maicon</h1>
 
       <p class="hero-date">07 de novembro de 2026</p>
 
       <div class="hero-line"></div>
+
     </div>
   </header>
 
@@ -287,7 +313,7 @@
         </svg>
       </div>
 
-      <h2>E registre o que seus olhos veem</h2>
+      <h2>Ajude-nos a registrar esse momento tão especial</h2>
 
       <p class="upload-description">
         Poste suas fotos e vídeos do nosso casamento.
