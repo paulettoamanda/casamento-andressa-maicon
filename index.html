@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#eaf5f9">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
 
   <title>Andressa & Maicon | Nosso Casamento</title>
   <meta name="description" content="Compartilhe suas fotos e vídeos do casamento de Andressa e Maicon.">
@@ -38,13 +38,13 @@
       color: var(--texto);
       font-family: 'DM Sans', sans-serif;
       text-align: center;
+      overflow-x: hidden;
     }
 
     /* FOTO PRINCIPAL */
 
     .hero {
       position: relative;
-      min-height: 580px;
       min-height: min(760px, 90svh);
       display: flex;
       align-items: center;
@@ -170,7 +170,7 @@
       line-height: 1.85;
     }
 
-    /* BOTÃO DE ENVIO DESTACADO */
+    /* BOTÃO DE ENVIO */
 
     .upload-button {
       display: flex;
@@ -260,9 +260,10 @@
       letter-spacing: 2px;
     }
 
+    /* AJUSTES PARA CELULAR */
+
     @media (max-width: 600px) {
       .hero {
-        min-height: 540px;
         min-height: 82svh;
         padding: 40px 18px;
         background-position: center center;
@@ -302,10 +303,6 @@
         transition: none;
       }
     }
-    body {
-  position: relative;
-  overflow-x: hidden;
-}
   </style>
 </head>
 
